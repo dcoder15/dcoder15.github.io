@@ -31,7 +31,7 @@ const text_content: TextOptionsAndContent = {
                 competencesLink: "Kompetenzen",
                 contactLink: "Kontakt",
                 name: "David Tomic",
-                business: "IT-Beratung und Software Entwicklung",
+                business: "IT-Beratung und Softwareentwicklung",
                 introduction: "Herzlich willkommen zu meinem Online Portfolio. Nachfolgend eine Gliederung zu meiner Ausbildung und Kompetenzen.",
                 educationHeading: "Ausbildung",
                 workExperienceHeading: "Berufserfahrung",
@@ -69,7 +69,7 @@ const text_content: TextOptionsAndContent = {
                         duration: "2016 - 2017",
                         details: {
                             name: "Technische Universität (TU) Berlin",
-                            program: "Innovation in Information and Communication Technology - Information Technology and Architecture",
+                            program: "Innovation in Information and Communication Technology - Internet Technology and Architecture",
                             degree: "Master of Science"
                         }
                     },
@@ -78,7 +78,7 @@ const text_content: TextOptionsAndContent = {
                         duration: "2017 - 2018",
                         details: {
                             name: "Königliche Technische Hochschule (KTH) Stockholm",
-                            program: "Innovation in Information and Communication Technology - Information Technology and Architecture",
+                            program: "Innovation in Information and Communication Technology - Internet Technology and Architecture",
                             degree: "Master of Science"
                         }
                     },
@@ -87,7 +87,7 @@ const text_content: TextOptionsAndContent = {
                         duration: "2016 - 2018",
                         details: {
                             name: "Europäisches Institut für Innovation und Technologie (EIT) Digital",
-                            program: "Innovation in Information and Communication Technology - Information Technology and Architecture",
+                            program: "Innovation in Information and Communication Technology - Internet Technology and Architecture",
                             degree: "Master of Science"
                         }
                     }
@@ -188,7 +188,7 @@ const text_content: TextOptionsAndContent = {
                         duration: "2016 - 2017",
                         details: {
                             name: "Technical University (TU) Berlin",
-                            program: "Innovation in Information and Communication Technology - Information Technology and Architecture",
+                            program: "Innovation in Information and Communication Technology - Internet Technology and Architecture",
                             degree: "Master of Science"
                         }
                     },
@@ -197,7 +197,7 @@ const text_content: TextOptionsAndContent = {
                         duration: "2017 - 2018",
                         details: {
                             name: "Royal Institute of Technology (KTH) Stockholm",
-                            program: "Innovation in Information and Communication Technology - Information Technology and Architecture",
+                            program: "Innovation in Information and Communication Technology - Internet Technology and Architecture",
                             degree: "Master of Science"
                         }
                     },
@@ -206,7 +206,7 @@ const text_content: TextOptionsAndContent = {
                         duration: "2016 - 2018",
                         details: {
                             name: "European Institute of Innovation and Technology (EIT) Digital",
-                            program: "Innovation in Information and Communication Technology - Information Technology and Architecture",
+                            program: "Innovation in Information and Communication Technology - Internet Technology and Architecture",
                             degree: "Master of Science"
                         }
                     }

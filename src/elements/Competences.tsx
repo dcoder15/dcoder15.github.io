@@ -10,6 +10,9 @@ import { Bootstrap, Cplusplus, Csharp, CssThree, DotNet, Gnubash, Html5, Java, J
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        "& .MuiGrid-spacing-xs-3 > .MuiGrid-item": {
+            padding: "11px"
+        }
     },
     divider: {
         margin: "20px 0",
