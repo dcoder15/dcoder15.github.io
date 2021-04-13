@@ -151,7 +151,7 @@ const text_content: TextOptionsAndContent = {
                 contactLink: "Contact",
                 name: "David Tomic",
                 business: "IT consulting and software development",
-                introduction: "Welcome to my online portfolio. In the following you will find information on my education and competencies.",
+                introduction: "Welcome to my online portfolio. In the following you will find information on my education and competences.",
                 educationHeading: "Education",
                 workExperienceHeading: "Work experience",
                 competencesHeading: "Competences (excerpt)",
@@ -217,7 +217,7 @@ const text_content: TextOptionsAndContent = {
                         duration: "2014 - 2015",
                         details: {
                             companyType: "Tutoring services broker",
-                            activity: "Tutoring of IT and Mathematics",
+                            activity: "Tutoring in IT and mathematics",
                             type: "Minor"
                         }
                     },
