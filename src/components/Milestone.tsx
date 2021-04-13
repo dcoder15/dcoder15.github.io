@@ -3,11 +3,12 @@ import { Grid, GridDirection, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        "& .MuiStepIcon-text": {
-            display: "none"
-        },
-        "& .MuiStepLabel-labelContainer": {
-            padding: theme.spacing(2)
+        /**
+         * Workaround for the Safari rounding issue (https://github.com/mui-org/material-ui/issues/17142).
+         * Adjust according to the used spacing!
+         */
+        "& .MuiGrid-spacing-xs-2": {
+            margin: "-7px"
         }
     }
 }));
