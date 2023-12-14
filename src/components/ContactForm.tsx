@@ -94,7 +94,7 @@ const ContactForm: React.FunctionComponent<IContactFormProps> = (
 									variant={"outlined"}
 									fullWidth
 									multiline
-									rows={10}
+									minRows={10}
 									value={body}
 									onChange={(e) => setBody(e.target.value)}
 								/>

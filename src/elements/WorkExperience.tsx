@@ -12,76 +12,84 @@ import InfoIcon from "@material-ui/icons/Info";
 import { MilestoneDetails } from "../static/text_content";
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-    },
-    divider: {
-        margin: "20px 0",
-        width: "100%"
-    }
+	root: {},
+	divider: {
+		margin: "20px 0",
+		width: "100%",
+	},
 }));
 
 /**
  * Props passed to the @see WorkExperience.
  */
-interface IWorkExperienceProps {
-}
+interface IWorkExperienceProps {}
 
 /**
  * WorkExperience.
  */
-const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (props: IWorkExperienceProps) => {
-    const classes = useStyles();
+const WorkExperience: React.FunctionComponent<IWorkExperienceProps> = (
+	props: IWorkExperienceProps
+) => {
+	const classes = useStyles();
 
-    const appStore = ContainerFactory.getContainer().resolve<AppStore>("AppStore");
-    const storeState = useStoreState(appStore);
+	const appStore =
+		ContainerFactory.getContainer().resolve<AppStore>("AppStore");
+	const storeState = useStoreState(appStore);
 
-    if (!storeState) {
-        return null;
-    }
+	if (!storeState) {
+		return null;
+	}
 
-    const { localized_text_content } = storeState;
+	const { localized_text_content } = storeState;
 
-    return <React.Fragment>
-        <Box
-            className={classes.root}
-            id={"workExperience"}>
-            <Grid
-                container
-                direction={"column"}>
-                <Grid item>
-                    <Typography
-                        variant={"h6"}
-                        gutterBottom>
-                        {localized_text_content.workExperienceHeading}
-                    </Typography>
-                </Grid>
-                <Grid item>
-                    <MilestonesContainer>
-                        {(localized_text_content.workExperiences as MilestoneDetails[]).map(workExperience => {
-                            return <Milestone
-                                key={workExperience.id}
-                                heading={workExperience.duration}>
-                                <IconAndText
-                                    icon={<PlaceIcon />}
-                                    text={workExperience.details.companyType}
-                                />
-                                <IconAndText
-                                    icon={<InfoIcon />}
-                                    text={workExperience.details.activity}
-                                />
-                                <IconAndText
-                                    icon={<ScheduleIcon />}
-                                    text={workExperience.details.type}
-                                />
-                            </Milestone>
-                        })
-                        }
-                    </MilestonesContainer>
-                </Grid>
-            </Grid>
-        </Box>
-        <Divider className={classes.divider} />
-    </React.Fragment>;
-}
+	return (
+		<React.Fragment>
+			<Box className={classes.root} id={"workExperience"}>
+				<Grid container direction={"column"}>
+					<Grid item>
+						<Typography variant={"h6"} gutterBottom>
+							{
+								localized_text_content.workExperienceHeading as string
+							}
+						</Typography>
+					</Grid>
+					<Grid item>
+						<MilestonesContainer>
+							{(
+								localized_text_content.workExperiences as MilestoneDetails[]
+							).map((workExperience) => {
+								return (
+									<Milestone
+										key={workExperience.id}
+										heading={workExperience.duration}
+									>
+										<IconAndText
+											icon={<PlaceIcon />}
+											text={
+												workExperience.details
+													.companyType
+											}
+										/>
+										<IconAndText
+											icon={<InfoIcon />}
+											text={
+												workExperience.details.activity
+											}
+										/>
+										<IconAndText
+											icon={<ScheduleIcon />}
+											text={workExperience.details.type}
+										/>
+									</Milestone>
+								);
+							})}
+						</MilestonesContainer>
+					</Grid>
+				</Grid>
+			</Box>
+			<Divider className={classes.divider} />
+		</React.Fragment>
+	);
+};
 
 export default WorkExperience;

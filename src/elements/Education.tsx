@@ -48,7 +48,7 @@ const Education: React.FunctionComponent<IEducationProps> = (
 				<Grid container direction={"column"}>
 					<Grid item>
 						<Typography variant={"h6"} gutterBottom>
-							{localized_text_content.educationHeading}
+							{localized_text_content.educationHeading as string}
 						</Typography>
 					</Grid>
 					<Grid item>
